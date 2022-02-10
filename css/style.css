@@ -92,3 +92,39 @@ header div.wrap {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+/* SEKCJA ABOUT US */
+
+section.aboutUs {
+    max-width: 80vw;
+    margin: 8vh auto;
+}
+
+div.feature {
+    float: left;
+    width: 33%;
+    padding: 2vh 2vw;
+    text-align: center;
+}
+
+h2.feature {
+    margin-bottom: 2vh;
+    color: black;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+h2.feature:hover {
+    color: #e6d7e2;
+}
+
+p.feature {
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+img.feature {
+    height: 100px;
+    margin-bottom:1vh;
+}
