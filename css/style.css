@@ -1,0 +1,94 @@
+/* font-family: 'Allura', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Montserrat', arial, sans-serif;
+    color: #2d363f;
+    min-height: 200vh;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/banner1.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 60vw 100vh;
+    background-color: #e6d7e2;
+}
+
+h1.banner {
+    position: absolute;
+    top: 41vh;
+    left: 45vw;
+    width: 50vw;
+    font-size: 111px;
+    font-family: 'Allura', arial, sans-serif;
+    font-weight: lighter;
+}
+
+h2.banner {
+    position: absolute;
+    top: 59vh;
+    left: 62vw;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/* NAWIGACJA */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.main-menu ul {
+    margin-left: 65vw;
+}
+
+li.menu-item {
+    float: left;
+    list-style: none;
+}
+
+li.menu-item a {
+    display: block;
+    margin-right: 10px;
+    padding: 2vh 2vh 1vh;
+    color: #2d363f;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+li.menu-item a:hover {
+    border-bottom: 1px solid #2d363f;
+    color: black;
+}
+
+header div.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
