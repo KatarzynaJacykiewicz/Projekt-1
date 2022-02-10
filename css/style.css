@@ -8,6 +8,7 @@ font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
+
 .clearfix::after {
     content: "";
     display: block;
@@ -18,11 +19,13 @@ html {
     font-size: 16px;
     font-family: 'Montserrat', arial, sans-serif;
     color: #2d363f;
-    min-height: 200vh;
+    min-height: 400vh;
 }
 
 header {
     position: relative;
+    top: 0;
+    left: 0;
     height: 100vh;
     background-image: url('../images/banner1.jpg');
     background-repeat: no-repeat;
@@ -50,7 +53,7 @@ h2.banner {
     font-weight: lighter;
 }
 
-/* NAWIGACJA */
+/* NAV */
 
 nav {
     position: absolute;
@@ -88,16 +91,16 @@ header div.wrap {
     top: 0;
     left: 0;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* SEKCJA ABOUT US */
+/* SECTION ABOUT US */
 
 section.aboutUs {
     max-width: 80vw;
-    margin: 8vh auto;
+    margin: 10vh auto 15vh;
 }
 
 div.feature {
@@ -120,11 +123,60 @@ h2.feature:hover {
 
 p.feature {
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: lighter;
 }
 
 img.feature {
-    height: 100px;
-    margin-bottom:1vh;
+    height: 90px;
+    margin-bottom: 2vh;
+}
+
+/* SECTION OFFER */
+
+section.offer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+div.offer {
+    position: absolute;
+    top: 3%;
+    left: 55%;
+    width: 40vw;
+    text-align: center;
+}
+
+img.offer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    z-index: -1;
+}
+
+h2.offer {
+    margin-bottom: 2vh;
+    color: black;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+p.offer {
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+div.offer-items {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 80%;
+    height: 80vh;
+    background-color: #e6d7e2;
 }
