@@ -176,7 +176,33 @@ div.offer-items {
     position: absolute;
     top: 30%;
     left: 30%;
-    width: 80%;
+    width: 70%;
     height: 80vh;
     background-color: #e6d7e2;
+}
+
+div.offer-item {
+    float: left;
+    height: 75%;
+    margin: 7% 1.5vw;
+    background-color: white;
+    text-align: center;
+}
+
+.offer-item img {
+    opacity: 70%;
+    width: 20vw;
+}
+
+h3.offer-item {
+    padding: 2vh 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+p.offer-item {
+    width: 20vw;
+    padding: 1vw 2vh;
+    font-size: 14px;
+    line-height: 1.5;
 }
