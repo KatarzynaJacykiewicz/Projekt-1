@@ -48,7 +48,7 @@ h1.banner {
 
 h2.banner {
     position: absolute;
-    top: 59vh;
+    top: 60vh;
     left: 62vw;
     font-size: 18px;
     text-transform: uppercase;
@@ -205,6 +205,30 @@ p.offer-item {
     line-height: 1.5;
 }
 
+/* PORTFOLIO */
+
+section.gallery {
+    margin: 40vh 0;
+    min-height: 80vh;
+}
+
+.gallery img {
+    width: 33%;
+    padding: 2vh 2vh;
+}
+
+.gallery h3 {
+    padding: 4vh 2vw;
+    font-size: 19px;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
 /* SECTION OPINION */
 
 section.opinion {
@@ -311,7 +335,7 @@ input.newsletter {
     width: 30vw;
     height: 4vh;
     margin: 0 auto;
-    padding: 0 5px;
+    padding: 0 1vw;
     border-radius: 20px;
 }
 
@@ -349,7 +373,7 @@ div.contact {
 }
 
 p.icon {
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
