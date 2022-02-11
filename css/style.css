@@ -16,10 +16,12 @@ font-family: 'Montserrat', sans-serif;
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Montserrat', arial, sans-serif;
     color: #2d363f;
     min-height: 400vh;
+    line-height: 1.5;
+    font-weight: lighter;
 }
 
 header {
@@ -119,11 +121,11 @@ h2.feature {
 
 h2.feature:hover {
     color: #e6d7e2;
+    font-weight: lighter;
 }
 
 p.feature {
     line-height: 1.5;
-    font-size: 14px;
     font-weight: lighter;
 }
 
@@ -166,11 +168,7 @@ h2.offer {
     letter-spacing: 1px;
 }
 
-p.offer {
-    line-height: 1.5;
-    font-size: 14px;
-    font-weight: lighter;
-}
+
 
 div.offer-items {
     position: absolute;
@@ -205,4 +203,153 @@ p.offer-item {
     padding: 1vw 2vh;
     font-size: 14px;
     line-height: 1.5;
+}
+
+/* SECTION OPINION */
+
+section.opinion {
+    margin-top: 50vh;
+    height: 70vh;
+    background-image: url('../images/banne2.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 10%;
+    background-size: cover;
+}
+
+div.opinion {
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    background-color: rgba(32, 32, 32, 0.4);
+    text-align: center;
+    line-height: 1.5;
+    padding: 10% 10px;
+}
+
+h3.opinion {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+p.opinion {
+    width: 40vw;
+    padding: 2vh 3vw;
+    margin: 0 auto;
+    color: white;
+    font-size: 14px;
+}
+
+div.clients {
+    float: left;
+    height: 8vh;
+    width: 8vh;
+    margin: 2vh 1vw;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+div.first-client {
+    background-image: url(../images/client1.JPG);
+}
+
+div.second-client {
+    background-image: url(../images/client2.JPG);
+}
+
+div.third-client {
+    background-image: url(../images/client3.JPG);
+}
+
+div.photos {
+    width: 18vw;
+    margin: 0 auto;
+}
+
+div.opinion-second-client {
+    display: none;
+}
+
+div.opinion-third-client {
+    display: none;
+}
+
+.first-client:hover {
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+
+/* FOOTER */
+
+footer {
+    min-height: 55vh;
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+div.newsletter {
+    width: 50vw;
+    padding: 8vh 3vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p.newsletter {
+    padding-bottom: 4vh;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input.newsletter {
+    display: block;
+    width: 30vw;
+    height: 4vh;
+    margin: 0 auto;
+    padding: 0 5px;
+    border-radius: 20px;
+}
+
+button.newsletter {
+    padding: 0 30px;
+    margin-top: 2vh;
+    line-height: 2;
+    border-radius: 20px;
+    border: none;
+    background-color: #e6d7e2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button.newsletter:hover {
+    cursor: pointer;
+}
+
+div.box {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+div.contact {
+    float: left;
+    width: 20vw;
+    padding: 2vh 5vw;
+    text-align: center;
+}
+
+.contact i {
+    padding-bottom: 2vh;
+    font-size: 25px;
+    color: #a37797;
+}
+
+p.icon {
+    padding-bottom: 2vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
