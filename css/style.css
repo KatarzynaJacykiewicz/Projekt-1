@@ -8,7 +8,6 @@ font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-
 .clearfix::after {
     content: "";
     display: block;
@@ -23,8 +22,6 @@ html {
     line-height: 1.5;
     font-weight: lighter;
 }
-
-
 
 header {
     position: relative;
@@ -172,8 +169,6 @@ h2.offer {
     text-transform: uppercase;
 }
 
-
-
 div.offer-items {
     position: absolute;
     top: 30%;
@@ -219,6 +214,12 @@ section.gallery {
 .gallery img {
     width: 33%;
     padding: 2vh 2vh;
+    transition: 0.5s;
+
+}
+
+.gallery a:hover img {
+    opacity: 0.8;
 }
 
 .gallery h3 {
@@ -317,7 +318,6 @@ p.steps {
     font-size: 12px;
     line-height: 2;
 }
-
 
 /* SECTION OPINION */
 
