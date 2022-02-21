@@ -184,10 +184,16 @@ div.offer-item {
     margin: 7% 1.5vw;
     background-color: white;
     text-align: center;
+    transition: 0.2s linear;
+}
+
+div.offer-item:hover {
+    transform: scale(0.99);
+    box-shadow: 0 0 2px 2px #dabdd2;
 }
 
 .offer-item img {
-    opacity: 70%;
+    opacity: 0.8;
     width: 20vw;
 }
 
@@ -195,6 +201,7 @@ h3.offer-item {
     padding: 2vh 0;
     font-weight: lighter;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 p.offer-item {
@@ -332,11 +339,9 @@ p.steps {
     left: 30%;
     padding-right: 1vw;
     width: 60%;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 2;
 }
-
-
 
 /* SECTION OPINION */
 
