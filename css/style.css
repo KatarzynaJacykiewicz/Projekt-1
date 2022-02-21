@@ -259,14 +259,25 @@ div.steps {
     display: flex;
     height: 6vh;
     text-align: center;
+    border-bottom: 1px solid #b1b1b1;
 }
 
-.steps a {
+.steps button {
     flex-grow: 1;
     display: block;
+    border: none;
     color: #b1b1b1;
+    background-color: #fff;
+    font-size: 14px;
     text-decoration: none;
     line-height: 6vh;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.steps button:focus {
+    color: black;
     font-weight: bold;
 }
 
@@ -274,16 +285,23 @@ div.steps {
     padding-right: 1vw;
 }
 
-.steps a:hover {
+.steps button:hover {
     color: black;
+    cursor: pointer;
 }
 
+
 div.about-step {
+    display: none;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+div.about-step.active {
+    display: block;
 }
 
 div.step-number {
@@ -306,7 +324,6 @@ h3.steps {
     width: 60%;
     font-size: 19px;
     font-weight: lighter;
-
 }
 
 p.steps {
@@ -318,6 +335,8 @@ p.steps {
     font-size: 12px;
     line-height: 2;
 }
+
+
 
 /* SECTION OPINION */
 
