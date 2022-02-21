@@ -24,6 +24,8 @@ html {
     font-weight: lighter;
 }
 
+
+
 header {
     position: relative;
     top: 0;
@@ -164,8 +166,10 @@ img.offer {
 h2.offer {
     margin-bottom: 2vh;
     color: black;
+    font-size: 19px;
     font-weight: lighter;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 
@@ -208,7 +212,7 @@ p.offer-item {
 /* PORTFOLIO */
 
 section.gallery {
-    margin: 40vh 0;
+    margin: 40vh 0 0;
     min-height: 80vh;
 }
 
@@ -226,13 +230,98 @@ section.gallery {
     letter-spacing: 2px;
 }
 
+/* SECTION STEPS */
 
+section.steps {
+    min-height: 58vh;
+    margin-top: 15vh;
+    background-color: rgb(240, 240, 240);
+}
+
+h2.steps {
+    padding: 4vh 2vw;
+    font-size: 19px;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+div.steps-wrap {
+    height: 35vh;
+    width: 50vw;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+div.steps {
+    display: flex;
+    height: 6vh;
+    text-align: center;
+}
+
+.steps a {
+    flex-grow: 1;
+    display: block;
+    color: #b1b1b1;
+    text-decoration: none;
+    line-height: 6vh;
+    font-weight: bold;
+}
+
+.steps i {
+    padding-right: 1vw;
+}
+
+.steps a:hover {
+    color: black;
+}
+
+div.about-step {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.step-number {
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    width: 14vh;
+    height: 14vh;
+    font-size: 50px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14vh;
+}
+
+h3.steps {
+    position: absolute;
+    top: 11%;
+    left: 30%;
+    width: 60%;
+    font-size: 19px;
+    font-weight: lighter;
+
+}
+
+p.steps {
+    position: absolute;
+    top: 26%;
+    left: 30%;
+    padding-right: 1vw;
+    width: 60%;
+    font-size: 12px;
+    line-height: 2;
+}
 
 
 /* SECTION OPINION */
 
 section.opinion {
-    margin-top: 50vh;
     height: 70vh;
     background-image: url('../images/banne2.jpg');
     background-repeat: no-repeat;
@@ -244,17 +333,19 @@ div.opinion {
     width: 100%;
     height: 70vh;
     margin: 0 auto;
-    background-color: rgba(32, 32, 32, 0.4);
+    background-color: rgba(32, 32, 32, 0.7);
     text-align: center;
     line-height: 1.5;
-    padding: 10% 10px;
+    padding: 7% 10px;
 }
 
 h3.opinion {
+    padding-bottom: 3vh;
     color: white;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: lighter;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 p.opinion {
@@ -263,6 +354,14 @@ p.opinion {
     margin: 0 auto;
     color: white;
     font-size: 14px;
+    line-height: 2;
+}
+
+p.opinion-first-client {
+    padding-top: 1vh;
+    color: #e6d7e2;
+    letter-spacing: 1px;
+
 }
 
 div.clients {
@@ -302,16 +401,17 @@ div.opinion-third-client {
     display: none;
 }
 
-.first-client:hover {
+.first-client:hover,
+.second-client:hover,
+.third-client:hover {
     cursor: pointer;
     opacity: 0.8;
-
 }
 
 /* FOOTER */
 
 footer {
-    min-height: 55vh;
+    min-height: 60vh;
     background-color: rgb(31, 31, 31);
     color: white;
 }
@@ -324,8 +424,9 @@ div.newsletter {
 }
 
 p.newsletter {
-    padding-bottom: 4vh;
-    font-size: 18px;
+    padding: 3vh 0 5vh;
+    font-size: 19px;
+    font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -341,7 +442,7 @@ input.newsletter {
 
 button.newsletter {
     padding: 0 30px;
-    margin-top: 2vh;
+    margin-top: 3vh;
     line-height: 2;
     border-radius: 20px;
     border: none;
@@ -369,11 +470,15 @@ div.contact {
 .contact i {
     padding-bottom: 2vh;
     font-size: 25px;
-    color: #a37797;
+    color: #e6d7e2;
 }
 
 p.icon {
     padding-bottom: 1vh;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+::selection {
+    background-color: pink;
 }
