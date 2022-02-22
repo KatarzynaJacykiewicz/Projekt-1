@@ -347,7 +347,7 @@ p.steps {
 
 section.opinion {
     height: 70vh;
-    background-image: url('../images/banne2.jpg');
+    background-image: url('../images/banner2.jpg');
     background-repeat: no-repeat;
     background-position: 0 10%;
     background-size: cover;
@@ -388,46 +388,55 @@ p.opinion-first-client {
 
 }
 
-div.clients {
+div.photos div {
     float: left;
-    height: 8vh;
-    width: 8vh;
+    height: 9vh;
+    width: 9vh;
     margin: 2vh 1vw;
     border-radius: 50%;
-    background-color: red;
     text-align: center;
     background-position: center;
     background-size: cover;
 }
 
-div.first-client {
+div.photos div.first-client {
     background-image: url(../images/client1.JPG);
 }
 
-div.second-client {
-    background-image: url(../images/client2.JPG);
+div.photos div.second-client {
+    background-image: url(../images/client2.jpg);
 }
 
-div.third-client {
+div.photos div.third-client {
     background-image: url(../images/client3.JPG);
 }
 
 div.photos {
-    width: 18vw;
+    width: 21vw;
     margin: 0 auto;
 }
 
-div.opinion-second-client {
+div.photos~div.first-client {
     display: none;
 }
 
-div.opinion-third-client {
+div.photos~div.second-client {
     display: none;
 }
 
-.first-client:hover,
-.second-client:hover,
-.third-client:hover {
+div.photos~div.third-client {
+    display: none;
+}
+
+div.photos~div.on {
+    display: block;
+}
+
+
+
+div.photos div.first-client:hover,
+div.photos div.second-client:hover,
+div.photos div.third-client:hover {
     cursor: pointer;
     opacity: 0.8;
 }

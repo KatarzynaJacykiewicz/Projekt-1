@@ -21,11 +21,29 @@ btn.on("click", function(){
 })
 
 // Scrollowanie
-$('.menu-item a').on("click", function() {
+$('.menu-item a').on('click', function() {
 
     const goToSection = "[data-section=" + $(this).attr('class') + "]";
 
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top,
     })
+})
+
+// Przełączanie opinii klientów
+const icon = $('.photos div');
+
+    icon.on('click', function() {
+        const opinia = 'div.photos~div.'+ $(this).attr('class');
+        $(opinia).addClass('on');
+
+        if ($(this).hasClass('third-client')){
+        $('.second-client, .first-client').removeClass('on');
+            }
+            else if ($(this).hasClass('second-client')){
+                $('.first-client, .third-client ').removeClass('on');
+            }   
+            else if ($(this).hasClass('first-client')){
+                $('.third-client, .second-client').removeClass('on');
+            }
 })
