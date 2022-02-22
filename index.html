@@ -18,10 +18,10 @@
     <header>
         <nav class="main-menu">
             <ul class="clearfix">
-                <li class="menu-item"><a href="#">Home</a></li>
-                <li class="menu-item"><a href="#">About</a></li>
-                <li class="menu-item"><a href="#">Portfolio</a></li>
-                <li class="menu-item"><a href="#">Contact</a></li>
+                <li class="menu-item"><a class="about" href="#">About</a></li>
+                <li class="menu-item"><a class="offer" href="#">Offer</a></li>
+                <li class="menu-item"><a class="portfolio" href="#">Portfolio</a></li>
+                <li class="menu-item"><a class="contact" href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="wrap">
@@ -29,7 +29,7 @@
             <h2 class="banner">Create & plan your perfect wedding with us</h2>
         </div>
     </header>
-    <section class="aboutUs clearfix">
+    <section class="aboutUs clearfix" data-section="about">
             <div class="feature">
                 <img src="images/icon1.JPG" alt="ikona" class="feature">
                 <h2 class="feature">Qualified Team</h2>
@@ -46,7 +46,7 @@
                 <p class="feature">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic error aliquam corrupti.</p>
             </div>
     </section> 
-    <section class="offer clearfix">
+    <section class="offer clearfix" data-section="offer">
         <img src="images/section_photo.jpg" alt="" class="offer">
         <div class="offer">
             <h2 class="offer">What we offer</h2>
@@ -70,7 +70,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" data-section="portfolio">
         <h3>Our portfolio</h3>
         <div class="gallery">
             <a data-lightbox="portfolio" href="images/gallery-big-1.jpg"><img src="images/gallery-small-1.jpg" alt=""></a>
@@ -134,7 +134,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer data-section="contact">
         <div class="newsletter">
             <p class="newsletter">Subscribe our newsletter</p>
             <form>

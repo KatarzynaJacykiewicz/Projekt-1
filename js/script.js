@@ -1,3 +1,4 @@
+// Przełączanie kroków w sekcji STEPS
 const btn = $('.steps button');
 
 btn.on("click", function(){
@@ -17,4 +18,14 @@ btn.on("click", function(){
         else if ($(this).hasClass('step-one')){
             $('div.step-four, div.step-two, div.step-three').removeClass('active')
         }
+})
+
+// Scrollowanie
+$('.menu-item a').on("click", function() {
+
+    const goToSection = "[data-section=" + $(this).attr('class') + "]";
+
+    $('body, html').animate({
+        scrollTop: $(goToSection).offset().top,
+    })
 })
