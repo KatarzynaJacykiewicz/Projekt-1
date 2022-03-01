@@ -30,6 +30,7 @@ $('.menu-item a').on('click', function() {
     })
 })
 
+
 // Przełączanie opinii klientów
 const icon = $('.photos div');
 
@@ -46,4 +47,14 @@ const icon = $('.photos div');
             else if ($(this).hasClass('first-client')){
                 $('.third-client, .second-client').removeClass('on');
             }
+})
+
+//NAV 
+$('div.menu-icon').on('click' , function() { 
+    $('nav.bar-menu, i.fa-bars, i.fa-xmark').toggleClass('on');
+})
+
+$('.menu-item a').on('click' , function() {
+    $('nav.bar-menu, i.fa-xmark').removeClass('on');
+    $('i.fa-bars').toggleClass('on');
 })

@@ -208,6 +208,29 @@ header div.wrap {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+li a.offer-mobile {
+    display: none;
+}
+
+nav.bar-menu {
+    display: none;
+}
+
+div.menu-icon {
+    display: none;
+}
+
+
+@media (max-width: 1360px) {
+    li a.offer {
+        display: none;
+    }
+
+    li a.offer-mobile {
+        display: block
+    }
+}
+
 @media (max-width: 1250px) {
 
     .main-menu ul {
@@ -251,12 +274,71 @@ header div.wrap {
 @media (max-width: 920px) {
     li.menu-item a {
         font-size: 12px;
+        width: 70vw;
+    }
+
+    li.menu-item {
+        margin: 0 auto;
     }
 
     nav {
         display: none;
     }
+
+    nav.bar-menu {
+        display: block;
+        position: fixed;
+        top: -48vh;
+        left: 0;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .bar-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.bar-menu a:hover {
+        border-bottom: none;
+        background-color: #e6d7e2;
+    }
+
+    div.menu-icon {
+        position: fixed;
+        top: 3vh;
+        right: 6vw;
+        display: block;
+        z-index: 999;
+        color: #866e80;
+        font-size: 30px;
+    }
+
+
+
+    div.menu-icon i:hover {
+        cursor: pointer;
+    }
+
+    nav.bar-menu.on {
+        top: 0;
+    }
+
+    i.fa-bars,
+    i.fa-xmark.on {
+        display: block;
+    }
+
+    i.fa-bars.on,
+    i.fa-xmark {
+        display: none;
+    }
+
 }
+
 
 /* SECTION ABOUT US */
 
