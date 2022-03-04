@@ -5,5 +5,5 @@ The project is a single-page template for a wedding planner. Created to improve 
 •	CSS3 <br>
 •	jQuery <br>
 •	lightbox
-# Screen shots
+# Screenshots
 ![Przechwytywanie](https://user-images.githubusercontent.com/99404981/156358849-29de94f7-cee5-42ce-88c3-74c3532af5f7.JPG)
